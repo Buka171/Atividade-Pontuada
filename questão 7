@@ -1,15 +1,15 @@
 programa {
   funcao inicio() {
-    //declarando vari·veis
+    //declarando vari√°veis
     cadeia nome, quant, preco, total, desconto
     //consultando dados
-    escreva("Digite a descriÁ„o do produto: ")
+    escreva("Digite a descri√ß√£o do produto: ")
     leia(nome)
 
     escreva("Digite a quantidade adquirida: ")
     leia(quant)
 
-    escreva("Digite o preÁo unit·rio: ")
+    escreva("Digite o pre√ßo unit√°rio: ")
     leia(preco)
     //calculo
     total == quant * preco

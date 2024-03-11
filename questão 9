@@ -1,0 +1,27 @@
+programa {
+  funcao inicio() {
+    //declarando variaveis
+    inteiro valorParcelas
+    real valorEmprestimo, rendaMensal, valorPrestacao, valorPrestacaoMensal
+    //consultando dados
+    escreva("Digite sua renda mensal: R$")
+    leia(rendaMensal)
+    
+    escreva("Digite o valor do emprestimo: R$")
+    leia(valorEmprestimo)
+    //resultados
+    se(valorEmprestimo < rendaMensal * 10){
+      escreva("✅EMPRESTIMO LIBERADO✅")
+      escreva("\nDividir em quantas parcelas: ")
+      leia(valorParcelas)
+
+      valorPrestacao = (valorEmprestimo * (30/100))
+      valorPrestacaoMensal = valorPrestacao / valorParcelas
+
+      escreva("O valor parcelado será: R$", valorPrestacaoMensal)}
+      senao{
+        escreva("❌EMPRESTIMO REPROVADO❌")
+      }
+    
+  }
+}

@@ -1,0 +1,37 @@
+programa {
+  funcao inicio() {
+ //Declarando variáveis
+ real verdeCD, azulCD, amareloCD, vermelhoCD
+ real cd
+
+//tabela
+ escreva("===       LOJÃO DO ATACADÃO       ===")                      
+    escreva("\n  COR      === TABELA DE PREÇOS ===")
+    escreva("\n1-Verde         \t  R$ 10,00 ")
+    escreva("\n2-Azul         \t    R$ 20,00")
+    escreva("\n3-Amarelo      \t    R$ 30,00")
+    escreva("\n4-Vermelho     \t    R$ 40,00")
+
+//consultando dados
+escreva("\nDigite a cor do CD: ")
+leia(cd)
+//resultado
+escolha(cd){
+caso 1:
+escreva("O CD Verde está no valor de R$ 10,00", verdeCD)
+pare
+
+caso 2:
+escreva("O CD Azul está no valor de R$ 20,00", azulCD)
+pare
+
+caso 3:
+escreva("O CD Amarelo está no valor de R$ 30,00", amareloCD)
+pare
+
+caso 4:
+escreva("O CD Vermelho está no valor de R$ 40,00", vermelhoCD)
+pare
+    }
+  }
+}

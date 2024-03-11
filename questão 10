@@ -1,0 +1,50 @@
+programa 
+{ 
+funcao inicio() {
+//declarando variaveis  
+cadeia combustivel 
+real gasolina = 6.59 
+real alcool = 3.79 
+real desconto, litros, totalPago, total
+
+ //consultando dados
+escreva("Combustível Desejado: ") 
+leia(combustivel)
+
+//tabela
+1-gasolina
+2-alcool
+
+//resultados 
+escolha (combustivel){ 
+caso "A":
+escreva("Quantos litros: ") 
+leia(litros) 
+
+se(litros<=25){ 
+totalPago = gasolina * litros 
+total = totalPago - (totalPago * (3/100))
+escreva("Valor a ser pago: R$", total) } 
+se(litros > 25){ 
+totalPago = gasolina * litros 
+total= totalPago - (totalPago * (5/100))
+escreva("Valor a ser pago: R$", total) } 
+pare 
+  
+  caso "G": 
+  escreva("Quantos litros: ") 
+  eia(litros) 
+  se(litros <= 25){ 
+  totalPago = alcool * litros 
+  total = totalPago - (totalPago * (2/100)) 
+  total = mat.arredondar(total, 2) 
+  escreva("O Valor completo a se pagar é: R$", total) } 
+  se(litros > 25){ 
+  totalPago = alcool * litros 
+  total = totalPago -(totalPago * (4/100)) 
+  total = mat.arredondar(total, 2) 
+  escreva("O Valor completo a se pagar é: R$", total) }
+
+}
+  }
+}

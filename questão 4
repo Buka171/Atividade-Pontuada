@@ -1,1 +1,64 @@
+programa {
+  funcao inicio() {
+ //declarando variaveis
+ inteiro quilo 
+ real preco, valorTotal, desconto 
+ cadeia fruta
 
+  escreva("===       LOJÃO DO ATACADÃO       ===")                      
+    escreva("           \n             === TABELA DE PREÇOS ===")
+    escreva("\n            \t ATÉ 5kg  \t\t    ACIMA 5kg ")
+    escreva("\n1-Morango   \t R$ 2,50  \t\t    R$ 2,20")
+    escreva("\n2-Maçã      \t R$ 1,80   \t\t    R$ 1,50\n")
+ //consultando dados
+ escreva("\nQual Fruta deseja?") 
+ leia(fruta)
+//resultados
+escolha(fruta){ 
+caso "morango": 
+escreva("\nQuantos Kilos deseja?") 
+leia(quilo)
+
+se(quilo <= 5){ 
+preco = 2.50 
+valorTotal = preco * quilo 
+escreva("O valor a Pagar é:", valorTotal) 
+} 
+
+se(quilo > 5 e quilo <= 8){ 
+preco = 2.20 
+valorTotal = preco * quilo 
+escreva("O Valor total a pagar é:", valorTotal) 
+} 
+
+se(quilo > 8 ){
+preco = 2.20 
+valorTotal = preco * quilo 
+desconto = valorTotal - (valorTotal * (10/100)) 
+escreva("O Valor total com desconto é: ", desconto) 
+escreva("\nO Valor total sem desconto é: ", valorTotal) 
+} 
+pare 
+
+caso "maça": 
+escreva("\nQuantos Kilos deseja?\n") 
+leia(quilo) 
+
+se(quilo <= 5){ 
+preco = 1.80 
+valorTotal = preco * quilo 
+escreva("O valor a pagar é: ", valorTotal) } 
+
+se(quilo > 5 e quilo <= 8){ 
+preco = 1.50 valorTotal = preco * quilo 
+escreva("O Valor Total a pagar é: ", valorTotal) } 
+
+se(quilo > 8){ 
+preco = 1.50 valorTotal = preco * quilo 
+desconto = valorTotal - (valorTotal*(10/100)) 
+escreva("O Valor total com desconto é: ", desconto)
+escreva("\nO Valor total sem desconto é: ", valorTotal) } 
+pare  
+  }
+}
+}
